@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrei Sharshov - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.5;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            width: 30%;
+            padding-right: 20px;
+            border-right: 2px solid #ddd;
+        }
+        .right-column {
+            width: 70%;
+            padding-left: 20px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: white;
+                line-height: 1.2; /* уменьшенный интервал между строками */
+            }
+            .container {
+                display: flex;
+                flex-direction: row; /* две колонки */
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                width: 100%;
+            }
+            .left-column, .right-column {
+                padding: 10px; /* уменьшенные отступы */
+            }
+            .left-column {
+                width: 35%; /* немного больше места для левой колонки */
+            }
+            .right-column {
+                width: 65%;
+            }
+            h2 {
+                font-size: 16px;
+                margin-top: 8px;
+            }
+            h3 {
+                font-size: 14px;
+                margin-top: 5px;
+            }
+            p, li {
+                font-size: 12px;
+                margin-bottom: 3px; /* уменьшаем интервал между абзацами и списками */
+            }
+            ul {
+                padding-left: 15px;
+            }
+            .container {
+                page-break-after: avoid;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Column -->
+    <div class="left-column">
+        <h2>Personal Information</h2>
+        <p><strong>Name:</strong> Andrei Sharshov</p>
+        <p><strong>Email:</strong> job-offer.cv@asharshov.com</p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/andrew-sharshov-85157962">linkedin.com/in/andrew-sharshov-85157962</a></p>
+        <h2>Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>PIXI.js</li>
+            <li>Phaser.js</li>
+            <li>Spine animations</li>
+            <li>FairyGUI</li>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+            <li>WebGL</li>
+            <li>ECS</li>
+            <li>Git</li>
+            <li>RESTful APIs</li>
+            <li>Webpack</li>
+            <li>HTML5/CSS</li>
+            <li>Game optimization techniques</li>
+        </ul>
+
+        <h2>Languages</h2>
+        <ul>
+            <li>Russian - Native</li>
+            <li>English - B2</li>
+        </ul>
+        <h2>Education</h2>
+        <p><strong>ITMO University (Saint-Petersburg)</strong></p>
+        <p>Master of Technology, Instrumentation · (September 2008 - June 2014)</p>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+        <h2>Profile</h2>
+        <p>Experienced game developer specializing in game architecture, mechanics, and UI design. Developed a framework that significantly reduced playable ad development time from two weeks to 2-3 days, streamlining production processes. Also created a flexible framework for slot game development, enabling efficient and scalable projects.</p>
+        <p>With over five years of hands-on experience using WebGL, PIXI.js, and Phaser, I create visually engaging and interactive games. Proficient in TypeScript and JavaScript, ensuring robust and dynamic gameplay.</p>
+        <p>Now seeking a technical lead role to apply my skills in driving innovation, mentoring developers, and collaborating with teams to deliver top-quality projects.</p>
+
+        <h2>Experience</h2>
+        <h3>11.2023 - Present, Popiplay, Senior Game Developer</h3>
+        <ul>
+            <li>Developed a framework for creating slot games</li>
+            <li>Designed a flexible and maintainable architecture for slot games</li>
+            <li>Built engaging and interactive games</li>
+            <li>Created development tools to streamline the process</li>
+            <li>Conducted interviews and evaluated developers</li>
+            <li>Mentored developers to enhance their skills and performance</li>
+            <li>Collaborated with animators to support and optimize workflows</li>
+        </ul>
+
+        <h3>03.2022 - 10.2023, G5 Entertainment, Playable Ads Developer Grade 3</h3>
+        <ul>
+            <li>Developed a framework for producing Playable ads</li>
+            <li>Created a scalable and adaptable Match 3 mechanic</li>
+            <li>Developed a Match 3 mechanic with a hexagonal grid</li>
+            <li>Designed additional mechanics and boosters</li>
+            <li>Built various other game mechanics</li>
+            <li>Trained developers in Playable ads development</li>
+            <li>Collaborated with artists and animators</li>
+        </ul>
+
+        <h3>01.2022 - 04.2022, Playrix, Programmer</h3>
+        <ul>
+            <li>Developed playable ads using the company’s framework based on PIXI.js for the project Township</li>
+        </ul>
+
+        <h3>04.2021 - 11.2021, G5 Entertainment, Playable Ads Developer Grade 2</h3>
+        <ul>
+            <li>Developed playable ads using Phaser.js</li>
+        </ul>
+
+        <h3>02.2020 - 04.2021, Victoria Plus, Junior Game Developer</h3>
+        <ul>
+            <li>Created slot games using the company’s engine</li>
+        </ul>
+
+        <h3>09.2019 - 06.2020, Slogy.ru Project, Programmer</h3>
+        <ul>
+            <li>Developed UI components and mini-games</li>
+            <li>Developed website markup</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
