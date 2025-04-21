@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Andrei Sharshov - CV">
+    <meta property="og:description" content="A printable, minimal CV of Andrei Sharshov, Game Developer.">
+    <meta property="og:url" content="https://cv.asharshov.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cv.asharshov.com/preview.png">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Andrei Sharshov - CV</title>
     <style>
         body {
@@ -15,6 +22,7 @@
         }
         .container {
             display: flex;
+            flex-direction: row;
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
@@ -47,25 +55,35 @@
             text-decoration: none;
         }
 
-        /* Print styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .left-column, .right-column {
+                width: 100%;
+                padding: 10px 0;
+                border: none;
+            }
+        }
+
         @media print {
             body {
                 background-color: white;
-                line-height: 1.2; /* уменьшенный интервал между строками */
+                line-height: 1.2;
             }
             .container {
-                display: flex;
-                flex-direction: row; /* две колонки */
+                flex-direction: row;
                 margin: 0;
                 padding: 0;
                 box-shadow: none;
                 width: 100%;
             }
             .left-column, .right-column {
-                padding: 10px; /* уменьшенные отступы */
+                padding: 10px;
             }
             .left-column {
-                width: 35%; /* немного больше места для левой колонки */
+                width: 35%;
             }
             .right-column {
                 width: 65%;
@@ -80,7 +98,7 @@
             }
             p, li {
                 font-size: 12px;
-                margin-bottom: 3px; /* уменьшаем интервал между абзацами и списками */
+                margin-bottom: 3px;
             }
             ul {
                 padding-left: 15px;
@@ -98,12 +116,10 @@
 <body>
 
 <div class="container">
-    <!-- Left Column -->
     <div class="left-column">
         <h2>Personal Information</h2>
-        <p><strong>Name:</strong> Andrei Sharshov</p>
-        <p><strong>Email:</strong> job-offer.cv@asharshov.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/andrew-sharshov-85157962">linkedin.com/in/andrew-sharshov-85157962</a></p>
+        <p><strong>📧 Email:</strong> <a href="mailto:job-offer.cv@asharshov.com">job-offer.cv@asharshov.com</a></p>
+        <p><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/andrew-sharshov-85157962">linkedin.com/in/andrew-sharshov-85157962</a></p>
         <h2>Skills</h2>
         <ul>
             <li>JavaScript</li>
@@ -121,7 +137,6 @@
             <li>HTML5/CSS</li>
             <li>Game optimization techniques</li>
         </ul>
-
         <h2>Languages</h2>
         <ul>
             <li>Russian - Native</li>
@@ -132,7 +147,6 @@
         <p>Master of Technology, Instrumentation · (September 2008 - June 2014)</p>
     </div>
 
-    <!-- Right Column -->
     <div class="right-column">
         <h2>Profile</h2>
         <p>Experienced game developer specializing in game architecture, mechanics, and UI design. Developed a framework that significantly reduced playable ad development time from two weeks to 2-3 days, streamlining production processes. Also created a flexible framework for slot game development, enabling efficient and scalable projects.</p>
